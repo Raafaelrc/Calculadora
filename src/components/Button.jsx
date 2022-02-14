@@ -1,7 +1,9 @@
 import React from "react"
 import './Button.css'
 
-export default props => {
+
+
+const botao = (props) => {
     let classes = 'button '
     classes += props.operation ? 'operation' : ''
     classes += props.double ? 'double' : ''
@@ -14,4 +16,7 @@ export default props => {
             {props.label}
         </button>
     )
+
 }
+
+export default botao
